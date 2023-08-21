@@ -1,0 +1,61 @@
+body{
+    padding:10px;
+    background-color: rgb(235, 230, 230);
+    }
+    .heading{
+        height:200px;
+        background-color: white;
+        padding-top:60px;
+        box-sizing: border-box;
+        text-align:center;
+    }
+    .navbar{
+        background-color: black;
+    }
+    .navbar a{
+        display: block;
+        float: left;
+        text-decoration: none;
+        padding:15px;
+        color: white;
+        transition: 0.5s;
+    }
+    .navbar a:hover{
+        background-color: white;
+        color:black;
+    }
+    .news{
+        width: 77%;
+        float: left;
+    }
+    .page{
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        background-color: rgb(255, 255, 255);
+    }
+    .about{
+        width:20%;
+        float:right;
+        padding:10px;
+        background-color: white;
+        margin-top: 20px;
+    }
+    .clearfix::after{
+        content:"";
+        clear:both;
+        display:table;
+    }
+    @media screen and (max-width:800px){
+        .about, .news{
+            float: none !important;
+            width:100% ;
+            padding: 0px;;
+        }
+    }
+    @media screen and (max-width:400px){
+        .navbar a{
+            float: none !important;
+            text-align:center;
+        }
+    }
